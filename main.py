@@ -1,11 +1,11 @@
-alf= "abcdefghijklmnopqrstuvwxyz"
-message=input("Введите строку для шифра")
+ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+MessageToEncrypt = input("Введите строку для шифра")
 encryptedMessege=""
-for i in message:
-    place = alf.find(i)
-    newPlace =(place + 1 + len(alf)) % len(alf)
-    if i in alf:
-        encryptedMessege+=alf[newPlace]
+for letter in MessageToEncrypt:
+    place = ALPHABET.find(letter)
+    newPlace = (place + 1 + len(ALPHABET)) % len(ALPHABET)
+    if letter in ALPHABET:
+        encryptedMessege+=ALPHABET[newPlace]
     else:
-        encryptedMessege+=i
+        encryptedMessege+=letter
 print(encryptedMessege)
