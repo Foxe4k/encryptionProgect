@@ -1,8 +1,8 @@
-alf= ["abcdefghijklmnopqrstuvwxyz"]
-message="hello world"
+alf= "abcdefghijklmnopqrstuvwxyz"
+message=input("Введите строку для шифра")
 encryptedMessege=""
 for i in message:
-    place=alf.find(i)
+    place = alf.find(i)
     newPlace =place
     if i in alf:
         encryptedMessege+=alf[newPlace]
