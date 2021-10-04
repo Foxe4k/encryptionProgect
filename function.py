@@ -1,7 +1,7 @@
 ALPHABET_EN = "abcdefghijklmnopqrstuvwxyz"
 ALPHABET_RU ="абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-language=input("Введите язык(RU-Русский;EN-Английский)")
-def encryptedMessege(MessageToEncrypt):
+
+def encryptedMessege(MessageToEncrypt,language):
     encryptedMessege = ""
 
     ALPHABET=ALPHABET_RU
